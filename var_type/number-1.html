@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UDF-8">
+        <title>Hello</title>
+    </head>
+    <body>
+        <script>
+            let diemsinh;
+            let diemhoa;
+            let diemvatly;
+           diemsinh= prompt("Input the poit sinh");
+           diemhoa= prompt("Input the poit hoa");
+            diemvatly= prompt("Input the poit vat ly");
+            // chuyen chuoi thanh so
+           diemsinh= parseInt(diemsinh);
+           diemhoa= parseInt(diemhoa);
+           diemvatly= parseInt(diemvatly);
+           // tong and average
+           let sum = diemhoa+diemsinh+diemvatly;
+           let average = (diemhoa+diemsinh+diemvatly)/3;
+           // in ra
+           document.write("sum= "+sum);
+           document.write('<br/>');
+           document.write("average="+average);
+        </script>
+    </body>
+</html>
