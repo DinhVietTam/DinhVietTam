@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count;
+        var num =1;
+        for (count=1;count<=100;count++){
+            if(num % 3 == 0 && num % 5 == 0)
+            document. write("So thu: FizzBuzz <br>");
+            else if(num % 3 == 0){
+                document.write("So thu: Fizz <br>");
+            }else if (num % 5 == 0){
+                document.write("So thu: Buzz <br>");
+            }else{
+            document.write("So thu:" + count + "<br>");
+            }
+            num ++;
+        }
+    </script>
+</body>
+</html>
