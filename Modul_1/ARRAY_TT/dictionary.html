@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+<body>
+    <center>
+   <h3>BAI TAP TU DIEN :</h3>
+   <br>
+   <label  >DICTIONARY</label>
+   <br>
+   <br>
+   <table>
+   <tr>
+   <td><select name="ngonngon" id="firstLanguage">
+           <option value="tiengViet"> Tieng Viet</option>
+           <option value="engLish">Tieng Anh</option>
+       </select>
+   </td>
+   <td> <input type="text" id ="languageIn"></td>
+   </tr>
+   <tr>
+       <td><select name="ngonngon" id="secondLanguage">
+               <option value="tiengViet"> Tieng Viet</option>
+               <option value="engLish">Tieng Anh</option>
+           </select>
+       </td>
+       <td> <input type="text" id ="languageOut"></td>
+   </tr>
+   <tr>
+       <td><button type="button" onclick="change();">TRA</button></td>
+   </tr>
+   </table>
+   <script>
+       function change(){
+           let E=new Array("you", "I", "name", "one", "love", "no","day","learn","eat"," ","");
+           let V= ["bạn", "tôi", "tên", "một", "yêu", "không","ngày","học","ăn"," ",""];
+           let A=[];
+           let B=[];
+           let count =false;
+           let firstLanguage= document.getElementById('firstLanguage').value;
+           let secondLanguage= document.getElementById('secondLanguage').value;
+           let languageIn= document.getElementById('languageIn').value;
+           if(firstLanguage=="tiengViet"){
+               for(let i =0;i< V.length;i++)
+               A[i]=V[i];
+           }
+           if(firstLanguage=="engLish"){
+               for(let i =0;i< V.length;i++)
+               A[i]=E[i];
+           }
+           if(secondLanguage=="engLish"){
+               for(let i=0;i<V.length;i++)
+               B[i]=E[i];
+           }
+           if(secondLanguage=="tiengViet"){
+               for(let i=0;i< V.length;i++)
+               B[i]=V[i];
+           }
+           for(let i=0;i<A.length;i++){
+               if(A[i]==languageIn){
+                   document.getElementById('languageOut').value=B[i];
+                   count = true;
+               }
+           }
+           if (!count) alert("KHONG TIM THAY");
+       }
+   </script>
+    <center>
+</body>
+</html>
