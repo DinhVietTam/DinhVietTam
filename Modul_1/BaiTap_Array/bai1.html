@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i;
+        var count =0;
+        var arraySum;
+        var nameArray = [12,7,8,9,15,21,4,3,8,19];
+        for(i=0;i<nameArray.length;i++){
+            if(nameArray[i]>=10){
+                count = count + 1;
+                arraySum = nameArray[i];
+                document.write("cac phan tu lon hon 10: "+arraySum +"<br>");
+            }
+        }
+        document.write("so phan tu lon hon 10:"+ count + "<br>");
+        
+    </script>
+</body>
+</html>

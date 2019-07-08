@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let count=0;
+        let nameArray = Array();
+        for (i = 0; i < 5; i++) {
+            nameArray[i] = parseInt(prompt("nhap vao phan tu mang"));
+        }
+        for (i = 0; i < 5; i++) {
+            document.write("phan tu thu [" + i + "]: " + nameArray[i] + "<br>");
+        }
+        for(i=0;i<5;i++){
+            if(nameArray[i]<0){
+                count = count+1;
+            }
+        }
+        document.write("so phan tu mang am: "+ count);
+    </script>
+</body>
+
+</html>

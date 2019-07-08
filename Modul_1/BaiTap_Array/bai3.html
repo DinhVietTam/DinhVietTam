@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let intArray = [12,10,6,8,4,9,17,19,3,7];
+        let max = intArray[0];
+        let count =0;
+        let sum =0;
+        for(i=1;i<intArray.length;i++){
+            if(max < intArray[i]){
+                max =intArray[i];
+            }
+            sum =sum + intArray[i];
+            count = count +1;
+        }
+        sum =sum+intArray[0];
+        count=count+1;
+        document.write("gia tri lon nhat cua mang: "+max+"<br>");
+        document.write("gia tri trung binh cua mang: "+ sum/count);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+       function main(){
+        let intArray = [];
+        let giatr;
+
+        
+        for (i = 0; i < 4; i++) {
+            intArray[i] = parseInt(prompt("nhap vao ca phan tu cho mang!"))
+        }
+        giatr = parseInt(prompt("nhap vao gia tri can tim"));
+        
+        
+        if(checkExist(giatr, intArray)){
+            alert("ton tai");
+     
+        }
+        else{
+            alert("khong ton tai");
+        }
+       }
+
+
+        function checkExist(giatr, intArray) {
+            for(let i = 0; i < intArray.length; i++){
+            if (intArray[i] == giatr) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        main();
+       
+    </script>
+</body>
+
+</html>

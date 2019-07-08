@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vitriMax = 0;
+        var arrayName = [26,9,7,11,15,19,21,24,5,6]
+        var max = arrayName[0];
+        for(let i=1;i<arrayName.length;i++){
+            if(max<arrayName[i]){
+                max = arrayName[i];
+                vitriMax=i;
+            }
+        }
+        document.write("gia tri lon nhat cua mang: "+ max + "<br>");
+        document.write("gia tri lon nhat cua mang o vi tri: "+ vitriMax);
+        // for(let i=0;i<arrayName.length;i++){
+        //     if(max==arrayName[i]){
+        //         document.write("gia tri lon nhat cua mang o vi tri: "+ i);
+        //     }
+        // }
+    </script>
+</body>
+</html>
