@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkArray(nameArray, giatri) {
+            for (i = 0; i < 10; i++) {
+                if (nameArray[i] == giatri) {
+                    nameArray[i] = nameArray[i + 1];
+                    nameArray[9] = 0;
+                }
+                document.write("phan tu thu [" + i + "]: "+nameArray[i] + "<br>");
+            }
+        }
+
+        function main() {
+            let giatri;
+            let nameArray = [];
+            for (i = 0; i < 10; i++) {
+                nameArray[i] = parseInt(prompt("nhap vao so phan tu cho mang"));
+            }
+            for (i = 0; i < 10; i++) {
+                document.write("phan tu thu [" + i + "]: " + nameArray[i] + "<br>");
+            }
+            giatri = parseInt(prompt("nhap vao gia tri can tim."));
+            document.write("<br>");
+            checkArray(nameArray, giatri);
+        }
+        main();
+    </script>
+</body>
+
+</html>
