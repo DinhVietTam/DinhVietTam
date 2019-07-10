@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nameArraySao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        var nameArrayChom = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        function finding(string){
+            for(i=0;i<nameArraySao.length;i++){
+                if(string==nameArraySao[i]){
+                    return nameArrayChom[i];
+                }
+            }
+            return "khong tim thay";
+        }
+        var string = prompt("nhap vao gia tri can tim");
+        document.write("Ten chom sao cua ngoi sao:" + finding(string));
+    </script>
+</body>
+
+</html>
