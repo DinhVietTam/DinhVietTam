@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function soNguyenTo(number) {
+            if (number < 2) {
+                return false;
+            }
+            let count = 0;
+            for (i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    count++;
+                }
+            }
+            if (count == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function insoNguyenTo() {
+            let num = parseInt(prompt("Nhap vao so nguyen to can in."));
+            let dem = 0;
+            let prime = 2;
+            while (dem < num) {
+                if (soNguyenTo(prime)) {
+                    document.write(prime + "<br>");
+                    dem++;
+                }
+                prime++;
+            }
+        }
+        insoNguyenTo();
+    </script>
+</body>
+
+</html>
